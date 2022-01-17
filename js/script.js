@@ -34,4 +34,18 @@ $(document).ready(function () {
             return false;
         }
     }
+
+function getCrust(){
+    if(crust ==""){
+    alert("choose your choice of crust");
+    return false;
+    }
+    }
+    function getToppping(){
+    if(topping ==""){
+    alert("choose pizza-topping");
+    return false;
+    
+    }
 }
+    }
