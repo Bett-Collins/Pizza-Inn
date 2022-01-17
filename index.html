@@ -38,14 +38,14 @@
 
 
         <div class="col-md-3 ">
-          <img src="images/images (pizaa1).jpeg" height="170px" width="235px">
-          <div class="text">
-            <div class="sicilian">
+          <div class="sicilian">
+            <img src="images/images (pizaa1).jpeg" height="170px" width="235px">
+            <div class="text">
               <h5>Sicilian Pizza</h5>
-            </div>
-            <div class="p1">
               <p>In crust we trust</p>
             </div>
+            <p id="p1">I think of dieting, then I eat pizza.</p>
+
           </div>
         </div>
         <div class="col-md-3 one ">
@@ -100,8 +100,10 @@
         <h3>PIzza Toppings Prices</h3>
         <ol>
           <li> mushroom: @ 180 </li>
-          <li> Green pepper: @ 160 </li>
+          <li> Supreme: @ 160 </li>
           <li> pepperoni: @ 150</li>
+          <li> Sausage & Kale: @ 150</li>
+          <li> margherita: @ 150</li>
         </ol>
       </div>
       <div class="col-sm-4">
@@ -124,69 +126,63 @@
       </div>
     </div>
   </div>
-  <div class = "container">
-    <div class ="form-group text-center">
-  <div class="order text-center ">
-      <h2>Order Here</h2>
+  <div class="container">
+    <div class="form-group text-center">
+      <div class="order text-center ">
+        <h2>Order Here</h2>
+      </div>
+
+      <label for="Type of pizza">Your choice of pizza:</label><br>
+      <select id="pizza-type" name="pizza-type">
+        <option value="">Select pizza type</option>
+        <option value="Greek Pizza">Greek Pizza</option>
+        <option value="Neapolitan Pizza">Neapolitan Pizza</option>
+        <option value="Sicilian Pizza">Sicilian Pizza</option>
+        <option value="New York-Style Pizza">New York-Style Pizza</option>
+        <option value="Chicago Pizza">Chicago Pizza</option>
+
+      </select>
+
+      <div class=form>
+        <label for="Size of pizza">Choose size of pizza:</label><br>
+        <select id="size" name="pizza-size">
+          <option value="">select size</option>
+          <option value="600">Small</option>
+          <option value="800">Medium</option>
+          <option value="1200">Large</option>
+        </select>
+      </div>
+      <div class=form>
+        <label for="Type of crust">Your choice of crust:</label><br>
+
+        <select id="crust" name="crust-type">
+          <option value="">select crust</option>
+          <option value="500">Cripsy</option>
+          <option value="600">Stuffed</option>
+          <option value="900">Gluten-free</option>
+        </select>
+      </div>
+      <div class="form">
+        <label for="pizza-toppings">Choose the toppings:</label><br>
+
+        <select id="topping" name="topping">
+          <option value="">select toppings</option>
+          <option value="150">Pepperoni</option>
+          <option value="200">Supreme</option>
+          <option value="200">Sausage & Kale</option>
+          <option value="170">Margherita</option>
+        </select><br>
+        <label for="quality">Choose quantity:</label><br>
+        <input type="number" id="quantity" placeholder="Quantity">
+      </div><br><br>
+      
+      <input type="button" value="Order" onclick="order(); return false"><br><br>
     </div>
-    
-    <label for="Type of pizza">Your choice of pizza:</label><br>
-    <select id="pizza-type" name="pizza-type">
-      <option value="">Select pizza type</option>
-      <option value="Greek Pizza">Greek Pizza</option>
-      <option value="Neapolitan Pizza">Neapolitan Pizza</option>
-      <option value="Sicilian Pizza">Sicilian Pizza</option>
-      <option value="New York-Style Pizza">New York-Style Pizza</option>
-      <option value="Chicago Pizza">Chicago Pizza</option>
-
-    </select>
-  
-  <div class=form>
-    <label for="Size of pizza">Choose size of pizza:</label><br>
-
-    <select id="size" name="pizza-size">
-      <option value="">select size</option>
-      <option value="600">Small</option>
-      <option value="800">Medium</option>
-      <option value="1200">Large</option>
-    </select>
   </div>
-  <div class=form>
-    <label for="Type of crust">Your choice of crust:</label><br>
-
-    <select id="crust" name="crust-type">
-      <option value="">select crust</option>
-      <option value="500">Cripsy</option>
-      <option value="600">Stuffed</option>
-      <option value="900">Gluten-free</option>
-    </select>
-  </div>
-  <div class="form">
-    <label for="pizza-toppings">Choose the toppings:</label><br>
-
-    <select id="topping" name="topping">
-      <option value="">select toppings</option>
-      <option value="150">Pepperoni</option>
-      <option value="200">Supreme</option>
-      <option value="200">Sausage & Kale</option>
-      <option value="170">Margherita</option>
-    </select><br>
-    <label for="quality">Choose quantity:</label><br>
-    <input type="number" id="quantity" placeholder="Quantity">
-  </div><br><br>
-  <select name="delivery-" id="delivery-part" id= "delivery">
+  <select name="deliver" id="delivery-part" id="deliver">
     <option value="delivery">I need delivery</option>
     <option value="no-delivery">I don't need delivery</option>
-</select><br><br>
-  <input type="button" value="Order" onclick="order(); return false"><br><br>
-  
-  
-
-</div>
-</div>
-
-
-  
+  </select><br><br>
   <div class="card-footer text-center">
     <h3>Contact Us</h3><br>
     <h6>Email:arapbett1996@gmail.com</h6>
@@ -195,3 +191,8 @@
     <img src="images/twitter (1).png">
     <p>Pizza-Inn @2022</p>
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
