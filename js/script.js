@@ -33,4 +33,5 @@ $(document).ready(function () {
             alert("please place pizza-size");
             return false;
         }
-    
+    }
+}
