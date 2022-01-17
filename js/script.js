@@ -1,40 +1,77 @@
 $(document).ready(function () {
-    $(".sicilian").mouseover(function () {
+    $(".one").mouseover(function () {
         $("#p1").show();
 
 
     });
-    $(".sicilian").mouseout(function () {
+    $(".one").mouseout(function () {
         $("#p1").hide();
 
     })
 });
 
-$(".col-md-3").mouseover(function () {
-    $(".p1").show();
-});
-$(".p1").mouseout(function () {
-    $(".col-md-3").hide();
-});
+    $(".two").mouseover(function () {
+        $("#p2").show();
 
-$(document).ready(function () {
-    $(".p1").click(function () {
-        $(".sicilian").show();
-        $(".p1").hide();
 
     });
-    $(".sicilian").click(function () {
-        $(".p1").show();
-        $(".sicilian").hide();
-    })
-});
+    $(".two").mouseout(function () {
+        $("#p2").hide();
 
-$(".col-md-3").mouseover(function () {
-    $(".p1").show();
-});
-$(".p1").mouseout(function () {
-    $(".col-md-3").hide();
-});
+    })
+
+
+
+    $(".three").mouseover(function () {
+        $("#p3").show();
+
+
+    });
+    $(".three").mouseout(function () {
+        $("#p3").hide();
+
+    })
+
+
+
+    $(".four").mouseover(function () {
+        $("#p4").show();
+
+
+    });
+    $(".four").mouseout(function () {
+        $("#p4").hide();
+
+    })
+
+
+
+    $(".five").mouseover(function () {
+        $("#p5").show();
+
+
+    });
+    $(".five").mouseout(function () {
+        $("#p5").hide();
+
+    })
+
+
+
+    $(".six").mouseover(function () {
+        $("#p6").show();
+
+
+    });
+    $(".six").mouseout(function () {
+        $("#p6").hide();
+
+    })
+
+
+
+
+
 
 
 
