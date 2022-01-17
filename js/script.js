@@ -1,27 +1,26 @@
-
 $(document).ready(function () {
- $(".welcome").mouseover(function () {
-    $("#get").hide();
-    $(".welcome").show();
-
-});
-$(".welcome").click(function () {
-    $(".get").show();
-    $("#get").show();
-
-});
-
-$(document).ready(function () {
-    $(".one").mouseover(function () {
-        $("#p1").show();
-
+    $(".welcome").mouseover(function () {
+        $("#get").hide();
+        $(".welcome").show();
 
     });
-    $(".one").mouseout(function () {
-        $("#p1").hide();
+    $(".welcome").click(function () {
+        $(".get").show();
+        $("#get").show();
 
-    })
-});
+    });
+
+    $(document).ready(function () {
+        $(".one").mouseover(function () {
+            $("#p1").show();
+
+
+        });
+        $(".one").mouseout(function () {
+            $("#p1").hide();
+
+        })
+    });
 
     $(".two").mouseover(function () {
         $("#p2").show();
@@ -82,14 +81,6 @@ $(document).ready(function () {
     })
 })
 
-
-
-
-
-
-
-
-
 function order() {
     var size = document.getElementById("size").value;
     var crust = document.getElementById("crust").value;
@@ -126,28 +117,23 @@ function order() {
 
         }
     }
+    alert("Your pizaa will cost you " + " " + calculate + " " +" thanks for shopping with us");
+}
 
-
-function getQuantity(){
-    if (quantity == "") {
-        alert("Please select pizza quantity")
+function getDelivery() {
+    if (delivery === "") {
+        return false;
     }
-    else {
-        return true;
+    alert("Your pizza will be delived at an extra cost of 250 to " + document.getElementById("delivery").value + ". Thank you")
+}
+
+function getQuantity() {
+    if (quantity <= 0) {
+        alert("please place the right quantity");
+        var quantity = document.getElementById("quantity").focus();
+        return false;
+
     }
 
+
 }
-
-alert("Your pizaa will cost you"  + calculate + "thanks for shopping with us");
-}
-
-function getDelivery(){
-    if(delivery===""){
-    return false;
-}
-    alert("Your pizza will be delived at " + document.getElementById("delivery").value + ". Thank you")
-}
-
-
-
-
