@@ -1,3 +1,5 @@
+
+
 nav{
     background-color: #faebd7;
   height: 70px;
@@ -19,4 +21,76 @@ nav li{
 ul:hover{
 color: yellow;
 
+}
+
+.head {
+    background-image: url(images/images\ background1.jpg);
+
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+   
+   
+
+
+}
+.text{
+    padding: 10px;
+    color: blue;
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+}
+.text h5{
+    color: yellow;
+}
+.card-footer{
+    background-color: blue;
+}
+
+#size{
+ 
+    width: 400px;
+}
+#crust{
+  
+    width: 400px 
+}
+#topping {
+    width: 400px     
+}
+#pizza-type{
+    width: 400px  
+}
+.pizza{
+    margin:25px;
+    padding: 15px;
+   
+}
+.col-md-3 {
+ margin: 20px;
+ border: solid gray ;
+border-radius: 20px;
+height: 300px;
+width: fit-content;
+box-shadow: 2px,3px 3px 3px gray;
+align-items: center;
+text-align: center;
+
+
+}
+
+
+.form-group{
+    background-image: url(images/pizza\ \ background.webp);
+    position: relative;
+
+}
+
+#quantity{
+width: 400px
 }
