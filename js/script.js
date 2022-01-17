@@ -1,3 +1,16 @@
+
+$(document).ready(function () {
+ $(".welcome").mouseover(function () {
+    $("#get").hide();
+    $(".welcome").show();
+
+});
+$(".welcome").click(function () {
+    $(".get").show();
+    $("#get").show();
+
+});
+
 $(document).ready(function () {
     $(".one").mouseover(function () {
         $("#p1").show();
@@ -67,6 +80,7 @@ $(document).ready(function () {
         $("#p6").hide();
 
     })
+})
 
 
 
