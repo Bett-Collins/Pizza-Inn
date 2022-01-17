@@ -1,0 +1,22 @@
+nav{
+    background-color: #faebd7;
+  height: 70px;
+  
+}
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    margin-top: -47px;
+   color: blue;
+
+}
+nav li{
+    padding: 20px;
+}
+ul:hover{
+color: yellow;
+
+}
