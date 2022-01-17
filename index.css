@@ -65,17 +65,19 @@ color: yellow;
 }
 #pizza-type{
     width: 400px  
+    
 }
 .pizza{
     margin:25px;
     padding: 15px;
-   
+    
+ 
 }
 .col-md-3 {
  margin: 20px;
  border: solid gray ;
 border-radius: 20px;
-height: 300px;
+height: 330px;
 width: fit-content;
 box-shadow: 2px,3px 3px 3px gray;
 align-items: center;
@@ -83,14 +85,36 @@ text-align: center;
 
 
 }
-
+#p1,
+#p2,
+#p3,
+#p4,
+#p5,
+#p6{
+    display: none;
+}
+.order{
+    color: yellow;
+}
 
 .form-group{
     background-image: url(images/pizza\ \ background.webp);
     position: relative;
-
+    background-repeat: repeat;
+    color:white;
+    font-size: medium;
+    font-weight: 100;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 #quantity{
 width: 400px
+}
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.six:hover{
+color: blue;
 }
