@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    $(".p1").click(function () {
-        $(".sicilian").show();
-        $(".p1").hide();
+    $(".sicilian").mouseover(function () {
+        $("#p1").show();
+    
     
     });
-    $(".sicilian").click(function () {
-        $(".p1").show();
-        $(".sicilian").hide();
+    $(".sicilian").mouseout(function () {
+        $("#p1").hide();
+       
     })
     });
 
@@ -48,4 +48,23 @@ function getCrust(){
     
     }
 }
-    }
+alert("Your pizaa will cost you"  + calculate + "thanks for shopping with us");
+}
+
+function getDelivery(){
+    if(delivery===""){
+    return false;
+}
+    alert("Your pizza will be delived at " + document.getElementById("delivery").value + ". Thank you")
+}
+function getQuantity(){
+    if(quantity <= 0 ){
+        alert("please place the right quantity");
+        var quantity = document.getElementById("quantity").focus();
+        return false;
+   
+ }
+
+
+}
+
